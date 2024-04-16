@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="calculadora.js"></script>
+    <link  rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="fundo">
+        <div class="calc">
+            <p id="titulo">Calculadora</p>
+            <select name="operacao" id="operacao">
+                <option value="" disabled selected>Escolha sua operação</option>
+                <option value="adicao">Adição (+)</option>
+                <option value="subtracao">Subtração (-)</option>
+                <option value="multiplicacao">Multiplicação (×)</option>
+                <option value="divisao">Divisão (÷)</option>
+            </select>
+        </div>
+        <br>
+        <div class="um">
+            <label for="nome">Primeiro Número</label>
+            <br>
+            <input type="number" id="priNum" name="priNum">
+        </div>
+        <br>
+        <div class="um">
+            <label for="nome">Segundo Número</label>
+            <br>
+            <input type="number" id="segNum" name="segNum">
+        </div>
+        <br>
+        <div class="um">
+            <button type="button" id="botaoCalcular" onclick="calcular()">Calcular</button>
+            <p>O resultado foi:</p>
+            <p id="mostrarResultado"></p>
+        </div>
+    </div>
+</body>
+</html>
